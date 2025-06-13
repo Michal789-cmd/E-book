@@ -1,1 +1,111 @@
+/* Základní reset a proměnné */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+:root {
+  --color-primary: #6B8EAE;
+  --color-accent: #7CB342;
+  --color-text: #333333;
+  --font-base: 'Inter', sans-serif;
+}
+
+body {
+  font-family: var(--font-base);
+  color: var(--color-text);
+  line-height: 1.6;
+  background: #fff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+}
+
+header, main, footer {
+  padding: 1rem;
+}
+
+/* Layout produktu */
+.product {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.product img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 4px;
+}
+
+.product .details {
+  max-width: 600px;
+}
+
+.features {
+  list-style: none;
+  margin: 1rem 0;
+}
+
+.features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.features li::before {
+  content: "\2714\FE0F"; /* fajfka */
+  color: var(--color-accent);
+}
+
+/* CTA tlačítko */
+.cta-btn {
+  display: inline-block;
+  background: var(--color-accent);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: #5a8e2a;
+  transform: translateY(-2px);
+}
+
+.faq {
+  margin-bottom: 2rem;
+}
+
+.faq-item + .faq-item {
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .product {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .product img {
+    flex: 0 0 40%;
+  }
+
+  .product .details {
+    flex: 1;
+    padding-left: 2rem;
+  }
+}
