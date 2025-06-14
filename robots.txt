@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://michal789-cmd.github.io/E-book/sitemap.xml
