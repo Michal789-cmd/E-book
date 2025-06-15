@@ -14,6 +14,14 @@
   --container-width: 1200px;
 }
 
+#cookie-banner {
+  z-index: 1000;
+}
+.translate-y-full {
+  transform: translateY(100%);
+}
+
+
 body {
   font-family: var(--font-base);
   color: var(--color-text);
