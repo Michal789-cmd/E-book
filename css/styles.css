@@ -104,7 +104,7 @@ h1 {
 }
 /* Gradient na text */
 .gradient-text {
-  background: linear-gradient(90deg, var(--color-primary) 0% , var(--color-bg) 30%, var(--color-bg) 70%, var(--color-accent) 100%);
+  background: linear-gradient(90deg, var(--color-primary) 0% , var(--color-bg) 10%, var(--color-bg) 70%, var(--color-accent) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
