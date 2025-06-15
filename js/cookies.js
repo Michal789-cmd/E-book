@@ -1,4 +1,3 @@
-<script>
 (function() {
   const banner = document.getElementById('cookie-banner');
   const acceptBtn = document.getElementById('cookie-accept');
@@ -42,4 +41,3 @@
     loadMarketing();
   });
 })();
-</script>
